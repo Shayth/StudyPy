@@ -11,7 +11,7 @@ count = 0
 
 for i in range(a, b+1):
    if i % 3 == 0:
-       s =+ s + i
+       s = s + i
        count += 1
    else:
        i+=1
