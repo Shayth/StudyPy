@@ -6,22 +6,22 @@
 # стандартный вывод. Кодирование должно учитывать регистр символов.
 
 uncoded = str(input())
-l = len(uncoded)-1
+l = len(uncoded) - 1
 c = 1
 t = ''
-if len(uncoded)==1:
-    t = t +uncoded+str(c)
+if len(uncoded) == 1:
+    t = t + uncoded + str(c)
 else:
-    for i in range(0,l):
-        if uncoded[i]==uncoded[i+1]:
-            c +=1
-        elif uncoded[i]!=uncoded[i+1]:
-            t = t + uncoded[i]+str(c)
+    for i in range(0, l):
+        if uncoded[i] == uncoded[i + 1]:
+            c += 1
+        elif uncoded[i] != uncoded[i + 1]:
+            t = t + uncoded[i] + str(c)
             c = 1
-    for j in range(l,l+1):
-        if uncoded[-1]==uncoded[-2]:
-            t = t +uncoded[j]+str(c)
-        elif uncoded[-1]!=uncoded[-2]:
-            t = t +uncoded[j]+str(c)
+    for j in range(l, l + 1):
+        if uncoded[-1] == uncoded[-2]:
+            t = t + uncoded[j] + str(c)
+        elif uncoded[-1] != uncoded[-2]:
+            t = t + uncoded[j] + str(c)
             c = 1
 print(t)
