@@ -22,13 +22,3 @@ class Buffer:
 
     def get_current_part(self):
         return self.inp_list
-
-
-"""
-buf = Buffer()
-buf.add(1, 2, 3)
-print(buf.get_current_part())
-buf.add(4, 5)
-print(buf.get_current_part())
-buf.add(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-"""
